@@ -1,0 +1,30 @@
+* {
+    background-color: black;
+    color: white;
+    font-family: 'Lucida Console' , 'Courier New' , monospace;
+}
+
+td , th {
+    border-style: dotted;
+    width: 25%;
+    height: 100%;
+}
+
+ul {
+    list-style: georgian;
+}
+
+.titles {
+    text-align: center;
+}
+
+.blocks {
+    padding: 10px;
+    margin: 20px;
+}
+
+table {
+    display: flex;
+    margin: 0 auto;
+}
+

@@ -1,0 +1,230 @@
+/* ALL THE CONTENT */
+
+* {
+    font-family: Arial;
+}
+
+/* TITLES AND LOGO */
+
+h1 , h2 {
+    font-size: 35px;
+    text-align: center;
+    margin: 50px;
+    font-weight: bold;
+}
+
+#logo {
+    display: block;
+    width: 10%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+/* PARAGRAPHER AND GENERIC TEXT*/
+
+p , li , td {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 40px;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+p {
+    color: red;
+}
+
+/* TABLE */
+
+th {
+    font-weight: bold;
+    text-align: center;
+    padding: 30px;
+}
+
+#squads {
+    width: 50%;
+    margin: 0 auto;
+}
+
+td , th {
+    border: 2px solid;
+    background-color: lightgrey;
+}
+
+/* LIST */
+
+.players {
+    color: black;
+    text-decoration: none;
+}
+
+#players-list {
+    display: block;
+}
+
+/* DIV */
+
+#season , hr {
+    margin: 0;
+    padding: 0;
+}
+
+#season {
+    display: block;
+}
+
+/* PSEUDO-CLASSES */
+
+/*
+* The :hover pseudo-class permit to style your element when you hover with the cursor on the element
+*/
+
+a:hover {
+    color: black;
+}
+
+/*
+* The :active pseudo-class permit to style your element when you click on the link
+*/
+
+a:active {
+    color: yellow;
+}
+
+/*
+* The :visited pseudo-class permit to style your element when we clicked on it
+* and active than. For this exercise, I choose the color purple when I click on the anchor
+* and visit the website
+*/
+
+a:visited {
+    color: purple;
+}
+
+a:visited:hover {
+    color: black;
+}
+
+a:visited:active {
+    color: yellow;
+}
+
+td:hover , th:hover {
+    background-color: white;
+}
+
+li:hover {
+    font-size: 35px;
+}
+
+#season:hover {
+    animation-name: divAnimation;
+    animation-duration: 4s;   
+    animation-fill-mode: forwards;
+}
+
+/*
+* The pseudo class :not() permit to specify when it's not active the pseudo-class or the selector
+* in the ()
+*/
+
+#season:not(:hover) {
+    animation-name: divAnimationBack;
+    animation-duration:2s ;
+    animation-fill-mode: forwards;
+}
+
+#season:hover p {
+    animation-name: paragrapherAnimation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#players-list:hover {
+    animation-name: divAnimation;
+    animation-duration: 4s;   
+    animation-fill-mode: forwards;
+}
+
+#players-list:not(:hover) {
+    animation-name: divAnimationBack;
+    animation-duration:2s ;
+    animation-fill-mode: forwards;
+}
+
+#description {
+    display: block;
+}
+
+#description:hover {
+    animation-name: divAnimation;
+    animation-duration: 4s;   
+    animation-fill-mode: forwards;
+}
+
+#description:not(:hover) {
+    animation-name: divAnimationBack;
+    animation-duration:2s ;
+    animation-fill-mode: forwards;
+}
+
+#description:hover p {
+    animation-name: paragrapherAnimation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+/* ANIMATION 
+* For the animation with the CSS language we can use the @keyframe
+* that permit to write the CSS code for specify the animation,
+* from the first state to an another state
+* You can write about the animation duration or the fill mode in the selector
+* for example I choose the selector with pseudo-class :hover where
+* when you pass with the mouse on the div element it start with the animation
+* and pass to the basic state on another state (with more padding or font-size more big)
+*
+* For specify the initial state the CSS use the from { ... } and for the next state use
+* the to { ... }
+*/
+
+
+
+@keyframes paragrapherAnimation {
+    from {
+        font-family: 'Courier New', Courier, monospace;
+        margin: 40px;
+        text-align: center;
+        padding: 20px;
+        font-size: 20px;
+    }
+    to {
+        font-family: 'Courier New', Courier, monospace;
+        margin: 40px;
+        text-align: center;
+        padding: 10px;
+        font-size: 30px;
+    }
+}
+
+@keyframes divAnimation {
+    from {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    to {
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+}
+
+@keyframes divAnimationBack {
+    from {
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
+    to {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}

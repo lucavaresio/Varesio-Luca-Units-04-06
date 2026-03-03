@@ -1,0 +1,75 @@
+* {
+    background-color: brown;
+    font-size: 20px;
+    font-family: Arial;
+}
+
+/*TITLES AND PARAGRAPHER*/
+
+.titles {
+    text-align: center;
+    font-size: 25px;
+    padding: 20px;
+    font-style: italic;
+}
+
+#bear {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+}
+
+p , em , strong{
+    background-color: rgb(192, 62, 62);
+}
+
+p {
+    border: 1px dotted;
+}
+
+/*LIST*/
+
+#album-list {
+    list-style-image: url('../images/kanye-west.svg');
+}
+
+#second-paragrapher {
+    color: white;
+}
+
+#album-list li {
+    padding: 10px;
+    color: beige;
+}
+
+/*
+* to center the table in the html page we use the width declarations which allows us to set the width of the table to 50% 
+* of the page and the margin 0 auto which is divided into 0 for top and bottom and auto for right and left to
+* automatically define the margins of the table element
+*/
+
+/*TABLE*/
+
+#info {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#info thead th {
+    text-align: center;
+    padding: 10px;
+    color: beige;
+    border: 1px solid;
+    background-color: rgb(192, 62, 62);
+}
+
+#info tbody td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid;
+    border-color: beige;
+    background-color: rgb(192, 62, 62);
+}
+
+
+

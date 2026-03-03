@@ -1,0 +1,120 @@
+* {
+    background-color: black;
+    color: white;
+}
+
+#main-title {
+    font-size: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#carti-image {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+}
+
+#spotify {
+    width: 50px;
+}
+
+#apple {
+    width: 50px;
+}
+
+footer * {
+    padding: 20px;
+}
+
+#albums-title {
+    padding-bottom: 100px;
+}
+
+.out {
+    color: red;
+    font-family: 'Roboto' , sans-serif;
+}
+
+.out:hover {
+    color: white;
+}
+
+#apple:hover {
+    background-color: white;
+}
+
+#spotify:hover {
+    background-color: white;
+}
+
+.paragrapher {
+    font-family: 'Monsterrat' , sans-serif;
+    font-size: 20px;
+}
+
+.paragrapher:hover {
+    color: red;
+}
+
+p {
+    font-family: 'Monsterrat' , sans-serif;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Oswald' , sans-serif;
+}
+
+#list {
+    display: flex;
+    justify-content: space-between;
+}
+
+#album-list {
+    width: 50%;
+}
+
+#albums {
+    list-style: upper-roman;
+}
+
+#albums li {
+    padding: 15px;
+    font-size: 20px;
+    
+}
+
+.carti-albums:hover {
+    display: contents;
+}
+
+#album-images {
+    width: 50%;
+}
+
+.carti-albums {
+    margin-left: 50%;
+    display: none;
+}
+
+.album {
+    font-family: 'Source Sans Pro' , sans-serif;
+}
+
+.album:hover {
+    color: red;
+}
+
+.paragrapher:active {
+    color: blue;
+}
+
+.paragrapher:link {
+    color: white;
+}

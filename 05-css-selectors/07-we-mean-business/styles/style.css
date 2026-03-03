@@ -1,0 +1,62 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-style: italic;
+}
+
+#table {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 200px;
+}
+
+table {
+    width: 100%;
+}
+
+tr > th , td {
+    text-align: center;
+    border: 2px solid white;
+    color: black;
+    padding: 20px;
+}
+
+tr > th {
+    font-size: 25px;
+    background-color: grey;
+    text-transform: uppercase;
+    width: 100px;
+    height: 50px;
+}
+
+tr:nth-child(2n) > td {
+    background-color: white;
+}
+
+tr:nth-child(2n+1) > td {
+    background-color: lightgray;
+}
+
+tr > td {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 50px;
+}
+
+tr:nth-child(2n):hover > td {
+    background-color: grey;
+    font-weight: bold;
+    padding: 40px;
+}
+
+tr:nth-child(2n+1):hover > td {
+    background-color: grey;
+    font-weight: bold;
+    padding: 40px;
+}
