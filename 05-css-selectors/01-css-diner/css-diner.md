@@ -18,4 +18,17 @@ CSS DINER SOLUTIONS
 16. plate > apple , plate > pickle
 17. .small:not(orange)
 18. plate:nth-child(3)
-19. 
+19. bento:nth-last-child(3)
+20. apple:first-of-type
+21. plate:nth-of-type(even)
+22. plate:nth-of-type(2n+3)
+23. apple:only-of-type
+24. apple:not(.small)
+25. [class$="small"]
+26. [class*="small"]
+27. [class^="small"]
+28. bento:has(orange)
+29. plate:not(:has(apple))
+30. bento:has(orange.small)
+31. plate:first-child > apple
+32. plate > apple.small:last-child

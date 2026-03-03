@@ -1,11 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
 body {
     background-color: black;
     color: white;
 }
 
-h1 {
+h1 , th {
     text-align: center;
-    font-style: italic;
+    font-family: 'Josefin Sans' , sans-serif;
+    justify-content: center;
+}
+
+hr {
+    margin: 150px 0 150px 0;
+} 
+
+#main-title {
+    font-size: 70px;
+    margin-top: 90px;
 }
 
 #table {
@@ -14,17 +26,22 @@ h1 {
     margin-right: auto;
     display: block;
     margin-top: 200px;
+    margin-bottom: 10%;
 }
 
 table {
     width: 100%;
+    box-shadow: 12px 12px 10px rgba(255, 255, 255, 0.562);
+    border-radius: 35px 35px 35px 35px;
+    overflow: hidden;
 }
 
 tr > th , td {
     text-align: center;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     color: black;
     padding: 20px;
+    border: 2px solid white;
 }
 
 tr > th {
