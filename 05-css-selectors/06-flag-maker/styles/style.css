@@ -1,6 +1,6 @@
 body {
-    background-color: black;
-    color: white;
+    background-color: lightgray;
+    color: black;
     font-size: 20px;
 }
 
@@ -13,14 +13,14 @@ h2 {
     font-size: 1.5em;
 }
 
-#italy , #usa , #france {
+#italy , #usa , #france , #germany {
     margin-left: auto;
     margin-right: auto;
     width: 20%;
     border-collapse: collapse;
 }
 
-#italy td , #usa td , #france td {
+#italy td , #usa td , #france td , #germany td {
     width: 20px;
     height: 20px;
 }
@@ -51,7 +51,7 @@ h2 {
 .note {
     text-align: center;
     font-size: 1.2em;
-    color: lightgrey;
+    color: black;
     margin: 100px;
 }
 
@@ -85,6 +85,7 @@ h2 {
 
 #usa  tr:nth-child(-n+4)  td:nth-child(-n+4) {
     background-color: blue;
+    color: white;
 }
 
 /* FRANCE FLAG */
@@ -116,5 +117,16 @@ h2 {
     background-color: blue;
 }
 
+#germany tr:nth-child(-n+3) > td {
+    background-color: black;
+}
+
+#germany tr:nth-child(n+4) > td {
+    background-color: red;
+}
+
+#germany tr:nth-child(n+7) > td {
+    background-color: yellow;
+}
 
 

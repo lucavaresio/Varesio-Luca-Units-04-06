@@ -16,8 +16,12 @@ hr {
 } 
 
 #main-title {
-    font-size: 70px;
+    font-size: 80px;
     margin-top: 90px;
+    font-family: 'Josefin Sans' , sans-serif;
+    justify-content: center;
+    text-align: center;
+    display: flex;
 }
 
 #table {
@@ -31,9 +35,10 @@ hr {
 
 table {
     width: 100%;
-    box-shadow: 12px 12px 10px rgba(255, 255, 255, 0.562);
+    box-shadow: 16px 16px 10px rgba(255, 255, 255, 0.562);
     border-radius: 35px 35px 35px 35px;
     overflow: hidden;
+    border-collapse: collapse;
 }
 
 tr > th , td {
@@ -41,7 +46,6 @@ tr > th , td {
     /* border: 2px solid white; */
     color: black;
     padding: 20px;
-    border: 2px solid white;
 }
 
 tr > th {
@@ -50,6 +54,7 @@ tr > th {
     text-transform: uppercase;
     width: 100px;
     height: 50px;
+    padding: 50px;
 }
 
 tr:nth-child(2n) > td {
@@ -64,6 +69,7 @@ tr > td {
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
     width: 50px;
+    border-top: 1px solid black;
 }
 
 tr:nth-child(2n):hover > td {
