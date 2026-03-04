@@ -1,0 +1,49 @@
+@import url('https://fonts.cdnfonts.com/css/minecrafter-alt');
+
+body {
+    background-color: rgb(37, 37, 37);
+    color: rgb(26, 46, 26);
+}
+
+.logo {
+    width: 100px;
+    margin: collapse;
+}
+
+.titles {
+    font-size: 70px;
+    font-family: "Minecrafter Alt", sans-serif;
+}
+
+#main-title.titles {
+    font-size: 100px;
+    color: black;
+}
+
+header {
+    background-image: url('../images/minecraft_background.jpg');
+    margin-top: 0 ;
+    height: 25%;
+    display: flex;
+    box-shadow: 0 4px 10px rgb(1, 180, 1);
+}
+
+#title-logo {
+    display: flex;
+    width: 50%;
+    margin: 50px auto 50px auto;
+    height: 100%;
+}
+
+.logo , #main-title {
+    margin: 0 auto;
+}
+
+main {
+    margin-top: 200px;
+}
+
+#description.titles {
+    color: white;
+    margin-left: 150px;
+}
