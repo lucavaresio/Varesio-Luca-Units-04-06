@@ -1,31 +1,121 @@
 @import url('https://fonts.cdnfonts.com/css/minecrafter-alt');
+@import url('https://fonts.cdnfonts.com/css/minecraft-4');
+
+:root {
+    --menu-color: rgba(0, 0, 0, 0.76);
+    --menu-trigger-color: rgba(255, 255, 255, 0.414);
+    --shadow-header: rgb(1, 180, 1);
+    --shadow-hr: rgba(255, 255, 255, 0.52);
+    --background-body: rgb(37, 37, 37);
+    --text-color: rgb(255, 255, 255);
+    --text-table-green: rgb(12, 214, 12);
+    --text-table-green-hover: rgb(0, 255, 0);
+    --text-link-instgram: rgb(183, 103, 199);
+    --titles-background: rgba(0, 0, 0, 0.312);
+}
 
 body {
-    background-color: rgb(37, 37, 37);
-    color: rgb(26, 46, 26);
+    background-color: var(--background-body);
+    color: var(--text-color);
+    font-family: 'Minecraft' , sans-serif;
 }
+
+/* --- MENU AND MENU ICON TRIGGER --- */
+
+#menu-trigger {
+    background-color: var(--menu-trigger-color);
+    width: 10%;
+    height: 5%;
+    z-index: 100;
+    cursor: pointer;
+    position: fixed;
+    border-radius: 8px;
+    margin: 4px 0 0 4px;
+    align-items: center;
+    display: flex;
+}
+
+#menu-trigger > #menu-symbol {
+    width: 100%;
+    max-height: 100%;
+}
+
+#menu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    padding-top: 100px;
+    padding-left:50px ;
+    transform: translateX(-100%);
+    background-color: var(--menu-color);
+}
+
+#menu-container:hover #menu {
+  transform: translateX(0);
+}
+
+#menu-container:hover #menu-trigger  {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#menu-container:hover #menu-trigger #menu-symbol  {
+  opacity: 0;
+}
+
+#menu > #title {
+    font-size: 60px;
+    margin-bottom: 50px;
+    font-family: "Minecrafter Alt", sans-serif;
+}
+
+#menu-list {
+    list-style: disc;
+}
+
+#menu-list > li {
+    margin: 20px 0 20px 5%;
+}
+
+#menu-list a {
+    color: white;
+    font-size: 36px;
+    text-decoration: none;
+}
+
+#menu-list a:hover {
+    color: lightgreen;
+}
+
+/* --- MAIN TITLE WITH LOGOS --- */
 
 .logo {
     width: 100px;
-    margin: collapse;
+    height: auto;
 }
 
 .titles {
     font-size: 70px;
     font-family: "Minecrafter Alt", sans-serif;
+    color: white;
 }
 
-#main-title.titles {
+#header #main-title.titles {
     font-size: 100px;
     color: black;
+    background-color: var(--titles-background);
+    margin: 0 30px;
 }
 
-header {
+#header {
     background-image: url('../images/minecraft_background.jpg');
     margin-top: 0 ;
     height: 25%;
     display: flex;
-    box-shadow: 0 4px 10px rgb(1, 180, 1);
+    box-shadow: 0 4px 6px var(--shadow-header);
 }
 
 #title-logo {
@@ -39,11 +129,162 @@ header {
     margin: 0 auto;
 }
 
-main {
+/* --- MAIN CONTENT OF THE WEBSITE --- */
+
+#main > div {
+    padding: 10px;
     margin-top: 200px;
+    margin-left: 150px;
+    margin-bottom: 150px;
+    margin-right: 150px;
+    width: 85%;
+    display: flex;
 }
 
-#description.titles {
-    color: white;
-    margin-left: 150px;
+/* ----- DESCRIPTION DIV ----- */
+
+div[id$="-text"] > p { 
+    margin-top: 50px;
+    width: 75%;
+    line-height: 24px;
+}
+
+#description > #description-image {
+    width: 25%;
+    height: 100%;
+    float: right;
+}
+
+hr {
+    border: none;
+    background-color: gray;
+    height: 2px;
+    box-shadow: 0 2px 3px rgba(255, 255, 255, 0.52);
+    box-shadow: 0 -2px 3px rgba(255, 255, 255, 0.52);
+}
+
+/* ----- GAMEPLAY DIV ----- */
+
+#gameplay > #gameplay-image {
+    width: 25%;
+}
+
+#gameplay-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#gameplay-text > #gameplay-title {
+    text-align: right;
+}
+
+#gameplay-text > p {
+    text-align: right;
+}
+
+/* ----- BIOMES DIV ----- */
+
+#main > #biomes {
+    width: 80vw;
+    display: block;
+}
+
+#biomes-title {
+    text-align: center;
+}
+
+#biomes-table {
+    width: 75%;
+    margin: 150px auto;
+}
+
+#biomes-table td , #biomes th {
+    border: 2px dotted white;
+    text-align: center;
+    padding: 20px;
+    justify-content: center;
+}
+
+#biomes-table th {
+    background-color: var(--text-table-green);
+    color: black;
+}
+
+#biomes-table tr:nth-child(2n+1) td {
+    background-color: black;
+    color: var(--text-table-green);
+}
+
+#biomes-table tr:nth-child(2n) td {
+    background-color: var(--text-table-green);
+    color: black;
+}
+
+.table-images {
+    width: 40%;
+}
+
+/* ------ HEROBRINE DIV ------ */
+
+#main > #herobrine {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center;
+}
+
+#herobrine-title {
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+#herobrine-video {
+    width: 860px;
+    height: 630px;
+}
+
+/* --- FOOTER ---  */
+
+#footer {
+    background-color: black;
+    text-align: center;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#footer > #contacts-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin-top: 50px;
+    height: auto;
+}
+
+#footer > #contacts-section span {
+    margin: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#contacts-section a {
+    color: var(--text-table-green);
+    text-decoration: none;
+}
+
+#contacts-section a:hover {
+    color: var(--text-table-green-hover);
+    font-size: 30px;
+}
+
+#contacts-section #youtube {
+    color: red;
+}
+
+#contacts-section #instagram {
+    color: var(--text-link-instgram);
 }

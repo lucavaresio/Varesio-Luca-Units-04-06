@@ -12,19 +12,169 @@
         <link rel="stylesheet" href="./assets/styles/style.css" />
     </head>
     <body>
-        <header>
+        <div id="menu-container">
+            <div id="menu-trigger">
+                <img src="./assets/images/minecraft-logo.png" alt="Menu symbol trigger" id="menu-symbol">
+            </div>
+            <div id="menu">
+                <span id="title">Menu</span>
+                <ul id="menu-list">
+                    <li>
+                        <a href="#description" alt="Minecraft Description">Descrizione</a>
+                    </li>
+                    <li>
+                        <a href="#gameplay" alt="Gameplay Description of Minecraft">Gameplay</a>
+                    </li>
+                    <li>
+                        <a href="#biomes" alt="Biomes of Minecraft">Biomi</a>
+                    </li>
+                    <li>
+                        <a href="#herobrine" alt="Herobrine's mystery">Il mistero di herobrine</a>
+                    </li>
+                    <li>
+                        <a href="#footer" alt="Contacts section">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="header">
             <div id="title-logo">
                 <img src="./assets/images/minecraft-logo-svg-vector.svg" alt="Minecraft Logo" class="logo"/>
-                <span id="main-title" class="titles">
+                <h1 id="main-title" class="titles">
                     Minecraft
-                </span>
+                </h1>
                 <img src="./assets/images/minecraft-logo-svg-vector.svg" class="logo"/>
             </div>
-        </header>
-        <main>
-            <span class="titles" id="description">
-                Descrizione
-            </span>
-        </main>
+        </div>
+        <div id="main">
+            <div id="description">
+                <div id="description-text">
+                    <h2 class="titles" id="description-title">
+                        Descrizione
+                    </h2>
+                    <p>
+                        Minecraft è un videogioco sandbox sviluppato da Markus Persson e pubblicato da Mojang Studios. 
+                        Il gioco permette ai giocatori di esplorare un mondo tridimensionale generato proceduralmente composto da blocchi che rappresentano 
+                        diversi materiali come terra, pietra, legno e acqua. In Minecraft è possibile raccogliere risorse, costruire strutture, creare oggetti tramite il sistema di crafting e combattere varie creature.
+                        Il gioco offre diverse modalità, tra cui Survival, dove bisogna sopravvivere gestendo salute e fame, e Creative, che permette di costruire liberamente con risorse infinite. 
+                        Grazie alla sua libertà e alla grande community di mod e server multiplayer, 
+                        Minecraft è diventato uno dei videogiochi più popolari al mondo. È disponibile su molte piattaforme e continua a ricevere aggiornamenti e nuovi contenuti.
+                    </p>
+                </div>
+                <img src="./assets/images/minecraft-description.jpg" alt="Minecraft photo for description" id="description-image" />
+            </div>
+            <hr />
+            <div id="gameplay">
+                <img src="./assets/images/minecraft-gameplay.jpg" alt="Minecraft image for gameplay" id="gameplay-image" />
+                <div id="gameplay-text">
+                    <h2 class="titles" id="gameplay-title">
+                        Gameplay
+                    </h2>
+                    <p>
+                        Il gameplay di Minecraft si fonda sulla totale libertà d'azione all'interno di un mondo infinito composto da blocchi. I giocatori iniziano la loro avventura senza strumenti, dovendo raccogliere materiali grezzi 
+                        come legno e pietra per fabbricare i primi oggetti essenziali tramite il sistema di crafting. Una volta stabilita una base sicura, l'esperienza si divide tra l'esplorazione di caverne profonde alla ricerca di minerali preziosi come il diamante e la costruzione di strutture 
+                        architettoniche complesse. Durante la notte o nelle zone buie, è necessario difendersi dall'attacco di creature ostili come zombie, scheletri e i celebri creeper. Oltre alla modalità Sopravvivenza, che richiede la gestione della fame e dei punti vita, 
+                        esiste la modalità Creativa, dove ogni limite viene rimosso per permettere ai giocatori di dare libero sfogo 
+                        alla propria fantasia con risorse illimitate. Il gioco evolve costantemente grazie all'agricoltura, all'allevamento e alla possibilità di viaggiare in dimensioni alternative come il Nether o l'End.
+                    </p>
+                </div>
+            </div>
+            <hr />
+            <div id="biomes">
+                <h2 class="titles" id="biomes-title">Biomi Esplorabili</h2>
+                <table id="biomes-table">
+                    <thead>
+                        <tr>
+                            <th>Bioma</th>
+                            <th>Descrizione</th>
+                            <th>Rarità</th>
+                            <th>Blocco Distintivo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pianura</td>
+                            <td>Vaste distese di erba ideali per le costruzioni e ricche di cavalli.</td>
+                            <td>★☆☆☆☆</td>
+                            <td>
+                                <img src="./assets/images/Grass-block.png" alt="Minecraft's Grass Block" class="table-images" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Deserto</td>
+                            <td>Distese di sabbia prive di pioggia con cactus e templi nascosti.</td>
+                            <td>★★☆☆☆</td>
+                            <td>
+                                <img src="./assets/images/Cactus-block.png" alt="Minecraft's Cactus Block" class="table-images" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Giungla</td>
+                            <td>Fitta vegetazione con alberi altissimi e liane rampicanti.</td>
+                            <td>★★★☆☆</td>
+                            <td>
+                                <img src="./assets/images/Cocoa-block.png" alt="Minecraft's Cocoa Block" class="table-images" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Badlands</td>
+                            <td>Canyon colorati composti da vari strati di terracotta e oro.</td>
+                            <td>★★★★☆</td>
+                            <td>
+                                <img src="./assets/images/Terracotta-block.png" class="table-images" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Campi di Funghi</td>
+                            <td>Rarissime isole dove crescono funghi giganti e vivono le Mooshroom.</td>
+                            <td>★★★★★</td>
+                            <td>
+                                <img src="./assets/images/Mycelium-block.png" alt="Minecraft's Mycelium Block" class="table-images" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Picchi Ghiacciati</td>
+                            <td>Montagne altissime ricoperte di neve e ghiaccio compatto.</td>
+                            <td>★★★☆☆</td>
+                            <td>
+                                <img src="./assets/images/Packed-ice-block.png" alt="Minecraft's packed ice Block" class="table-images" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Mangrovia</td>
+                            <td>Paludi fitte caratterizzate da radici intrecciate e fango.</td>
+                            <td>★★★☆☆</td>
+                            <td>
+                                <img src="./assets/images/Mud-block.webp" alt="Minecraft's mud Block" class="table-images" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr />
+            <div id="herobrine">
+                <h2 class="titles" id="herobrine-title">Il mistero di Herobrine</h2>
+                <iframe id="herobrine-video" src="https://www.youtube.com/embed/muSrWALYUO4?si=EX0AooWL1XNfqKBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div id="footer">
+            <h2 id="footer-title" class="titles">
+                Contacts
+            </h2>
+            <div id="contacts-section">
+                <span>
+                    <a href="https://www.minecraft.net/it-it" alt="Official Minecraft Website" target="_blank">Sito ufficiale</a>
+                </span>
+                <span>
+                    <a href="#header" alt="turn back">Torna all'inizio</a>
+                </span>
+                <span>
+                    <a href="https://www.youtube.com/watch?v=RyTPkQ1ntmw" alt="Minecraft YT channel" target="_blank" id="youtube">Youtube</a>
+                </span>
+                <span>
+                    <a href="https://www.instagram.com/j0k3r/" alt="Minecraft instagram" target="_blank" id="instagram">instagram</a>
+                </span>
+            </div>
+        </div>
     </body>
 </html>
