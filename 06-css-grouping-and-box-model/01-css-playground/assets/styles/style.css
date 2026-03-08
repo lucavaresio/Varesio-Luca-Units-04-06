@@ -271,6 +271,8 @@ hr {
     font-style: italic;
 }
 
+/* CONTACTS */
+
 #contacts-section a {
     color: var(--text-table-green);
     text-decoration: none;
