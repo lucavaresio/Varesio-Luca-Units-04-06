@@ -204,6 +204,7 @@ hr {
     text-align: center;
     padding: 20px;
     justify-content: center;
+    align-items: center;
 }
 
 #biomes-table th {
@@ -222,7 +223,7 @@ hr {
 }
 
 .table-images {
-    width: 40%;
+    width: 20%;
 }
 
 /* ------ HEROBRINE DIV ------ */
