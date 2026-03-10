@@ -1,15 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com');
 
 :root {
     --background-color-page: rgb(240, 240, 167);
     --background-color-hedaer: rgb(230, 230, 154);
     --backround-color-nav: rgb(255, 255, 255);
+    --background-color-headline: rgb(197, 171, 84);
+    --text-color-article: rgba(39, 39, 39, 0.582);
+    --link-hover: rgb(207, 90, 90);
+    --shadow-color: rgba(0, 0, 0, 0.514);
+    --background-color-aside: rgb(223, 223, 144);
 }
 
 body {
-    background-color: var(--background-color-page);
     font-size: 24px;
+}
+
+h1 , h2 , h3 {
     font-family: "Lato" , sans-serif;
+    font-weight: bold;
+}
+
+p , span , a {
+    font-family: 'Inter' , sans-serif;
+    line-height: 1.3em;
+}
+
+.layout{
+    display:flex;
+}
+
+/* ASIDE */
+
+aside{
+    width: 15%;
+    background-color: var(--background-color-hedaer);
+    min-height: 200vh;
+}
+
+aside > h2 {
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 200px;
+    margin-top: 50px;
+    align-items: center;
+}
+
+aside h2 ~ p , aside li {
+    color: var(--text-color-article);
+    text-align: center;
+    margin: 40px;
+    line-height: 1.4em;
+    font-size: 0.9em;
+}
+
+aside li {
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 /* NAV FOR MENU */
@@ -31,6 +78,26 @@ nav > .icona-menu {
 
 nav > span {
     padding: 40px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.menu-link:link {
+    color: brown;
+    text-decoration: none;
+}
+
+.menu-link:visited {
+    color: brown;
+}
+
+nav > span:hover .menu-link {
+    color: var(--link-hover);
+    font-size: 1.3em;
+}
+
+.menu-link:active {
+    color: yellow;
 }
 
 /* HEADER */
@@ -51,5 +118,153 @@ header > h1 + p {
     font-family: 1.2em;
     text-align: center;
     font-style: italic;
-    padding: 30px;
+    padding: 20px;
+}
+
+/* MAIN */
+
+main {
+    background-color: var(--background-color-page);
+}
+
+/* HEADLINE NEWS */
+
+/* --- ELC NETSPEND --- */
+
+section {
+    margin: 10% 5% 10% 3%;
+    background-color: var(--background-color-headline);
+    border: 2px solid rgb(184, 158, 76);
+}
+
+section h2 {
+    font-size: 1.8em;
+    padding: 40px;
+    text-align: center;
+    border-bottom: 2px solid black;
+    box-shadow: 2px 0 9px var(--shadow-color);
+}
+
+article h3 {
+    font-size: 1.4em;
+    padding: 60px;
+}
+
+article h3 + p {
+    font-size: 1.1em;
+    color: var(--text-color-article);
+    padding: 70px;
+    width: 70%;
+    font-style: italic;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+
+.text {
+    width: 50%;
+}
+
+article > .album-images {
+    width: 30%;
+    height: 30%;
+    margin: 80px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 10px var(--shadow-color);
+    border-radius: 50px;
+}
+
+article:nth-child(2n) {
+    border-bottom: 2px solid black;
+    box-shadow: 2px 0 9px var(--shadow-color);
+}
+
+/* --- JUICE WRLD NEW SINGLE --- */
+
+article:nth-child(odd) h3 {
+    text-align: right;
+    margin-right: 80px;
+}
+
+article:nth-child(odd) h3 + p {
+    text-align: right;  
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+footer > h2 {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    padding: 80px;
+}
+
+/* --- FOOTER LINKS --- */
+
+footer #links  {
+    display: flex;
+}
+
+#links span {
+    margin: 80px;
+}
+
+#links .footer-links:link {
+    color: red;
+    text-decoration: none;
+}
+
+#links .footer-links:hover {
+    color: var(--link-hover);
+    font-size: 1.4em;
+}
+
+#links .footer-links:active {
+    color: white;
+}
+
+#links .footer-links:visited {
+    color: red;
+}
+
+#links .footer-links:visited:hover {
+    color: var(--link-hover);
+}
+
+#links #spotify {
+    color: rgb(0, 255, 0);
+}
+
+#links #spotify:hover {
+    color: rgb(0, 158, 0);
+}
+
+#links #apple {
+    color: rgb(247, 85, 112);
+}
+
+#links #apple:hover {
+    color: rgb(155, 56, 73);
+}
+
+#links #soundcloud {
+    color: orange;
+}
+
+#links #soundcloud:hover {
+    color: rgb(189, 123, 0);
 }
