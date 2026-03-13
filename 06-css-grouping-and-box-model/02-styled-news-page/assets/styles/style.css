@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com');
 
+/* Import for Lato and Inter font-family+ */
+
+* , *::after , *::before {
+    box-sizing: content-box;
+}
+
 :root {
     --background-color-page: rgb(240, 240, 167);
     --background-color-hedaer: rgb(230, 230, 154);
@@ -16,6 +22,8 @@ body {
     font-size: 24px;
 }
 
+/* Default Font Size for this page*/
+
 h1 , h2 , h3 {
     font-family: "Lato" , sans-serif;
     font-weight: bold;
@@ -30,7 +38,7 @@ p , span , a {
     display:flex;
 }
 
-/* ASIDE */
+/* ASIDE FOR THE DESCRIPTION BAR ON THE RIGHT*/
 
 aside{
     width: 15%;
@@ -60,6 +68,13 @@ aside li {
 }
 
 /* NAV FOR MENU */
+
+/*
+With the display flex the HTML elements can be grouped not in vertical
+but in row (in this case, with another propriety "flex-direction" we can specify
+the direction of the flex-items)
+*/
+
 
 nav {
     display: flex;
