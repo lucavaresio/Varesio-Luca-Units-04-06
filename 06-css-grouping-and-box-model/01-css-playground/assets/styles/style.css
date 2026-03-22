@@ -116,6 +116,7 @@ body {
     height: 25%;
     display: flex;
     box-shadow: 0 4px 6px var(--shadow-header);
+    position: sticky;
 }
 
 #title-logo {
